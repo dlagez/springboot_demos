@@ -1,10 +1,10 @@
-package com.example.demo2springsecurity20230808;
+package com.example.demo3_nacos;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Demo2SpringSecurity20230808ApplicationTests {
+class Demo3NacosApplicationTests {
 
     @Test
     void contextLoads() {
