@@ -1,19 +1,17 @@
 server:
-  port: 18084
+  port: 8080
 
 spring:
   application:
     name: nacos-config-example
   cloud:
     nacos:
-      config:
-        serverAddr: 175.24.172.220:8848
+      discovery:
+        server-addr: 175.24.172.220:8848
         username: nacos
         password: nacos
-      discovery:
+      config:
         serverAddr: 175.24.172.220:8848
-        namespace: public
-        group: DEFAULT_GROUP
         username: nacos
         password: nacos
   config:
