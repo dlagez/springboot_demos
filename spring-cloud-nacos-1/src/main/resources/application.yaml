@@ -1,0 +1,32 @@
+server:
+  port: 18084
+
+spring:
+  application:
+    name: nacos-config-example
+  cloud:
+    nacos:
+      config:
+        serverAddr: 175.24.172.220:8848
+        username: nacos
+        password: nacos
+      discovery:
+        serverAddr: 175.24.172.220:8848
+        namespace: public
+        group: DEFAULT_GROUP
+        username: nacos
+        password: nacos
+  config:
+    import:
+      - nacos:nacos-config-example.properties?refresh=true
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+logging:
+  level:
+    com.alibaba.cloud.nacos.configdata: debug
