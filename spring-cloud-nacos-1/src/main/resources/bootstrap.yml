@@ -14,6 +14,8 @@ spring:
         serverAddr: 175.24.172.220:8848
         username: nacos
         password: nacos
+#        如果这个文件是application.yaml 那么这个配置是不生效的，必须是bootstrap.yaml
+        file-extension: yaml
   config:
     import:
       - nacos:nacos-config-example.properties?refresh=true
