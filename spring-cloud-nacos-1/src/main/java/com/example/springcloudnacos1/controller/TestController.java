@@ -17,13 +17,14 @@ public class TestController {
     @Value("${name:roczhang-local}")
     private String useLocalCache;
 
-    @Value("${male:男-local}")
-    private String male;
+  @Value("${male:男-local}")
+  private String male;
 
-    @RequestMapping("/getMale")
-    public String getMale() {
-        return male;
-    }
+  @RequestMapping("/getMale")
+  public String getMale() {
+    return male;
+  }
+
     @RequestMapping("/get")
     public String get() {
         return useLocalCache;
