@@ -19,6 +19,8 @@ spring:
   config:
     import:
       - nacos:nacos-config-example.properties?refresh=true
+  profiles:
+    active: dev
 management:
   endpoint:
     health:
